@@ -1,0 +1,19 @@
+@import '../../styles/fonts.scss'; 
+
+.button{
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 16px;
+    color: #fff;
+    font-family: $fontMain;
+
+    // .button__gradient
+    &__gradient{
+        background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+    }
+
+    // .button__gray
+    &__gray{
+        background: rgba(white, 0.05);
+    }
+}

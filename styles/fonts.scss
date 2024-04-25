@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'TTNormsPro';
+    src: url('../fonts/TTNormsPro-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DrukWideCyr';
+  src: url('../fonts/DrukWideCyr-Bold.otf');
+  font-weight: 600;
+}
+
+$fontMain: "TTNormsPro";
+$titleMain: "DrukWideCyr";
