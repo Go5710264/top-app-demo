@@ -1,11 +1,22 @@
 @import '../../styles/fonts.scss'; 
+@import '../../styles/mixin.scss';
+
 
 .button{
+    display: flex;
+    align-items: center;
     font-size: 16px;
     border-radius: 12px;
     padding: 16px;
     color: #fff;
     font-family: $fontMain;
+
+    @include nsm {
+        font-size: 4.66vw;
+        border-radius: 3.47vw;
+        padding: 0 3.73vw;
+        column-gap: 1.87vw;
+    }
 
     // .button__gradient
     &__gradient{
@@ -15,5 +26,16 @@
     // .button__gray
     &__gray{
         background: rgba(white, 0.05);
+    }
+
+    
+    // .button__icon
+    &__icon{
+        width: 16px;
+        height: 16px;
+        @include nsm {
+            height: 4.66vw;
+            width: 4.66vw;
+        }
     }
 }

@@ -1,0 +1,30 @@
+@import '../../styles/fonts.scss'; 
+@import '../../styles/mixin.scss';
+
+.text{
+    font-size: 16px;
+    font-weight: 400;
+
+    @include nsm {
+        font-size: 4.27vw;
+    }
+
+    // .text_descriptionMain
+    &_descriptionMain{
+        font-size: 20px;
+
+        @include nsm {
+            font-size: 4.27vw;
+        }
+    }
+
+    // .text_descriptionSeries
+    &_descriptionSeries{
+    
+    }
+
+    // .text_reviews
+    &_reviews{
+        
+    }
+}
