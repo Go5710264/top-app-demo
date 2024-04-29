@@ -1,0 +1,73 @@
+@import '../../styles/fonts.scss'; 
+@import '../../styles/mixin.scss';
+@import '../../styles/fonts.scss'; 
+@import '../../styles/colors.scss'; 
+
+
+
+.tag{
+    display: inline-block;
+    border-radius: 8px;
+    color: $colorMainWhite;
+
+    @include nsm {
+        border-radius: 2.13vw;
+    }
+
+    // .tag_s
+    &_s{
+        padding: 5px 8px;
+        font-size: 16px;
+
+        @include nsm {
+            padding: 1.33vw 2.13vw;
+            font-size: 4.27vw;
+        }
+    }
+
+    // .tag_m
+    &_m{
+        padding: 10px 16px;
+        font-size: 12px;
+        box-shadow: -0.38px 0px 12.57px 0px #FFFFFF33 inset;
+        border-radius: 32px;
+        text-transform: uppercase;
+
+        @include nsm {
+            border-radius: 8.53vw;
+            padding: 2.67vw 4.27vw;
+            font-size: 3.2vw;
+        }
+    }
+
+    
+    // .tag_l
+    &_l{
+        padding: 6px 8px;
+        font-size: 16px;
+
+        @include nsm {
+            padding: 2.67vw 4.27vw;
+            font-size: 3.2vw;
+        }
+    }
+
+    // .tag_bgColorBlue
+    &_bgColorBlue{
+        background-color: $colorMainBlue;
+    }
+
+    // .tag_bgColorDimmingGray
+    &_bgColorDimmingGray{
+        background-color: $colorMainDimmingGray;
+    }
+
+    // .tag_borderWhite30
+    &_borderWhite30{
+        border: 1px solid $colorMainWhite30;
+
+        @include nsm {
+            border: 0.27vw solid $colorMainWhite30;
+        }
+    }
+}

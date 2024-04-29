@@ -1,7 +1,6 @@
 import Logotype from "../components/Logotype/Logotype";
-import { Htag, Button, ButtonContainer, Icon } from "../components";
+import { Htag, Button, ButtonContainer, Icon, Ptag, Tag } from "../components";
 import { TextContainer } from "../components/TextContainer/TextContainer";
-import { Ptag } from "../components/Ptag/Ptag";
 
 export default function MainPage(): JSX.Element {
   return (
@@ -14,18 +13,18 @@ export default function MainPage(): JSX.Element {
         <ButtonContainer>
           <Button appearance='gradient' className="first-button">7 дней за 0 ₽</Button>
           <Button appearance='gray'>Промокод</Button>
-          <Button appearance='gray' icon="souvenir">Ввести промокод</Button>
+          <Button appearance='gray' icon={true}>Ввести промокод</Button>
         </ButtonContainer>
         <ButtonContainer>
           <Button appearance='gradient'>Подробнее</Button>
-          <Button appearance="gray">
-            <Icon path='/bookmark.svg' alt='Добавить в избранное'/>
+          <Button appearance="gray" icon={true}>
+            <Icon svg="IconBookmark" alt='Добавить в избранное'/>
           </Button>
-          <Button appearance="gray">
-            <Icon path='/heart.svg' alt='Добавить в понравившиеся'/>
+          <Button appearance="gray" icon={true}>
+            <Icon svg="IconHeart" alt='Добавить в понравившиеся'/>
           </Button>
-          <Button appearance="gray">
-            <Icon path='/rightArrow.svg' alt='Отправить ссылку'/>
+          <Button appearance="gray" icon={true}>
+            <Icon svg="IconArrowRight" alt='Отправить ссылку'/>
           </Button>
         </ButtonContainer>
         <TextContainer>
@@ -34,6 +33,15 @@ export default function MainPage(): JSX.Element {
         <TextContainer>
           <Ptag appearance="description-series">Прекрасная планета Пандорра по-прежнему похожа на рай, где нашел себе приют бывший солдат Салли. Подрастают дети его нового народа, они играют на морских рифах и в подводном царстве. Кроме подростков на’ви на Пандорре растет и земной ребенок Джек Чемпион. Воскресают те, кто умер в былых сражениях: героиня Сигурни Уивер и зловещий полковник. Наконец, и земные корпорации снова предъявляют свои права на богатства Пандорры. Независимость фантастического первобытного рая придется отстаивать всем, кто его населяет.</Ptag>
         </TextContainer>
+        <Tag size="s" bgColor="Main/Blue">7,9</Tag>
+        <Tag size="s" bgColor="Main/Blue">8,9</Tag>
+        <Tag size="s" bgColor="Main/Blue">9,0</Tag>
+        <Tag size="m" >Субтитры</Tag>
+        <Tag size="m" >Дубляж</Tag>
+        <Tag size="m" >FULL HD</Tag>
+        <Tag size="l" bgColor="Main/Dimming-gray" border="Main/White30" >Новый сезон</Tag>
+        <Tag size="l" bgColor="Main/Dimming-gray" border="Main/White30" >Премьера</Tag>
+        <Tag size="l" bgColor="Main/Dimming-gray" border="Main/White30" >43:54</Tag>
       </div>
     </section>
   );

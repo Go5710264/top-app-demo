@@ -1,7 +1,6 @@
-import { ReactNode } from "react";
+import { DetailedHTMLProps, HtmlHTMLAttributes, ReactNode } from "react";
 
-export interface PtagProps{
+export interface PtagProps extends DetailedHTMLProps<HtmlHTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>{
     appearance: 'description-main' | 'description-series' | 'reviews' | 'none'
     children: ReactNode;
-    icon?: 'none' | 'souvenir';
 }
