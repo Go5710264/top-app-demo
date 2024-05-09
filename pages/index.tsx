@@ -1,6 +1,7 @@
 import Logotype from "../components/Logotype/Logotype";
-import { Htag, Button, ButtonContainer, Icon, Ptag, Tag } from "../components";
+import { Htag, Button, Container, Icon, Ptag, Tag } from "../components";
 import { TextContainer } from "../components/TextContainer/TextContainer";
+import SearchString from "../components/SearchString/SearchString";
 
 export default function MainPage(): JSX.Element {
   return (
@@ -9,13 +10,19 @@ export default function MainPage(): JSX.Element {
         <Htag tag={'h5'} children={'Новинки'}/>
         <Htag tag={'h4'} children={'Смотри зарубежное кино'}/>
         <Htag tag={'h3'} children={'Топ недели'}/>
-        <Logotype/>
-        <ButtonContainer>
-          <Button appearance='gradient' className="first-button">7 дней за 0 ₽</Button>
-          <Button appearance='gray'>Промокод</Button>
-          <Button appearance='gray' icon={true}>Ввести промокод</Button>
-        </ButtonContainer>
-        <ButtonContainer>
+        <Container typeContainer='header'>
+          <Logotype/>
+          <Container typeContainer='input'>
+            <SearchString />
+            <Icon svg='IconLoupe' alt='Поиск'></Icon>
+          </Container>
+          <Container typeContainer='buttons'>
+            <Button appearance='gradient' className="first-button">7 дней за 0 ₽</Button>
+            <Button appearance='gray'>Промокод</Button>
+          </Container>
+        </Container>
+        {/* <Button appearance='gray' icon={true}>Ввести промокод</Button> */}
+        <Container typeContainer='buttons'>
           <Button appearance='gradient'>Подробнее</Button>
           <Button appearance="gray" icon={true}>
             <Icon svg="IconBookmark" alt='Добавить в избранное'/>
@@ -26,7 +33,7 @@ export default function MainPage(): JSX.Element {
           <Button appearance="gray" icon={true}>
             <Icon svg="IconArrowRight" alt='Отправить ссылку'/>
           </Button>
-        </ButtonContainer>
+        </Container>
         <TextContainer>
           <Ptag appearance="description-main">Чтобы спасти мир от разрушительной войны, мальчик по имени Аанг должен справиться с четырьмя стихиями и вступить в схватку с безжалостным противником, который пытается его остановить.</Ptag>
         </TextContainer>

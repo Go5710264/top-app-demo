@@ -1,11 +1,19 @@
 @import '../../styles/mixin.scss';
+@import '../../styles/colors.scss';
 
 .icon{
     width: 24px;
     height: 24px;
+    fill: $colorMainGray;
 
     @include nsm {
         width: 5.33vw;
         height: 5.33vw;
     }
+}
+
+.iconLoupe{
+    position: absolute;
+    top: 0;
+    right: 0;
 }

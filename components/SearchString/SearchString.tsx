@@ -1,11 +1,10 @@
-import styles from './Logotype.module.scss';
+import styles from './SearchString.module.scss';
 
-const Logotype = () => {
+const SearchString = () => {
     return (
-        <input className={styles.search}>
-            <img src='/logotype.svg' alt="TVOЁ" />
+        <input className={styles.searchInput}>
         </input>
     )
 }
 
-export default Logotype;
+export default SearchString;

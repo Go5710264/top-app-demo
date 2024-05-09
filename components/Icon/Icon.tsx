@@ -4,6 +4,8 @@ import cn from 'classnames';
 import IconArrowRight from './arrowRight.svg'
 import IconBookmark from './bookmark.svg'
 import IconHeart from './heart.svg'
+import IconLoupe from './loupe.svg'
+
 
 export const Icon = ({svg, alt, className, ...props}:IconProps) => {
     switch (svg) {
@@ -13,6 +15,8 @@ export const Icon = ({svg, alt, className, ...props}:IconProps) => {
             return <IconBookmark className={cn(styles.icon, className)}></IconBookmark>
         case 'IconHeart':
             return <IconHeart className={cn(styles.icon, className)}></IconHeart>
+        case 'IconLoupe':
+            return <IconLoupe className={cn(styles.icon, styles.iconLoupe, className)}></IconLoupe>
         default:
             return <></>
     }

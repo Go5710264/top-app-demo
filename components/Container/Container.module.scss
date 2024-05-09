@@ -1,0 +1,23 @@
+@import '../../styles/mixin.scss'; 
+
+.buttons{
+    width: fit-content;
+    display: flex;
+    column-gap: 8px;
+};
+
+.header{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include nsm {
+        height: 19.2vw;
+    }
+};
+
+.input {
+    position: relative;
+}
