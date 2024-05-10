@@ -7,13 +7,20 @@
     fill: $colorMainGray;
 
     @include nsm {
-        width: 5.33vw;
-        height: 5.33vw;
+        width: 6.4vw;
+        height: 6.4vw;
     }
-}
+    
+    // .icon_loupe
 
-.iconLoupe{
-    position: absolute;
-    top: 0;
-    right: 0;
+    &_loupe{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+
+        @include nsm {
+            position: static;
+        }
+    }
 }

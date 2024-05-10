@@ -16,7 +16,7 @@ export const Icon = ({svg, alt, className, ...props}:IconProps) => {
         case 'IconHeart':
             return <IconHeart className={cn(styles.icon, className)}></IconHeart>
         case 'IconLoupe':
-            return <IconLoupe className={cn(styles.icon, styles.iconLoupe, className)}></IconLoupe>
+            return <IconLoupe className={cn(styles.icon, styles.icon_loupe, className)}></IconLoupe>
         default:
             return <></>
     }

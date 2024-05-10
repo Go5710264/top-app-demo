@@ -1,6 +1,18 @@
 @import '../../styles/mixin.scss';
+@import '../../styles/colors.scss';
 
 .searchInput{
     width: 379px;
     height: 68px;
+    border: none;
+
+    @include nsm {
+        display: none;
+    }
+    
+    // .searchInput_bgColorDimmingGray
+
+    &_bgColorDimmingGray{
+        background-color: $colorMainDimmingGray;
+    }
 }

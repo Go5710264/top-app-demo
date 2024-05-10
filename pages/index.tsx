@@ -7,20 +7,21 @@ export default function MainPage(): JSX.Element {
   return (
     <section className="section">
       <div className="container-box">
-        <Htag tag={'h5'} children={'Новинки'}/>
-        <Htag tag={'h4'} children={'Смотри зарубежное кино'}/>
-        <Htag tag={'h3'} children={'Топ недели'}/>
         <Container typeContainer='header'>
           <Logotype/>
-          <Container typeContainer='input'>
-            <SearchString />
+          <Container typeContainer='input' mobileHide = {true}>
+            <SearchString bgColor="Main/Dimming-gray"/>
             <Icon svg='IconLoupe' alt='Поиск'></Icon>
           </Container>
           <Container typeContainer='buttons'>
             <Button appearance='gradient' className="first-button">7 дней за 0 ₽</Button>
             <Button appearance='gray'>Промокод</Button>
+            <Button appearance='transparent' fontSize='m'>Вход</Button>
           </Container>
         </Container>
+        <Htag tag={'h5'} children={'Новинки'}/>
+        <Htag tag={'h4'} children={'Смотри зарубежное кино'}/>
+        <Htag tag={'h3'} children={'Топ недели'}/>
         {/* <Button appearance='gray' icon={true}>Ввести промокод</Button> */}
         <Container typeContainer='buttons'>
           <Button appearance='gradient'>Подробнее</Button>

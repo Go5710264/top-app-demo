@@ -7,32 +7,54 @@
 .button{
     display: flex;
     align-items: center;
-    font-size: 16px;
     border-radius: 12px;
     padding: 16px;
     color: $colorMainWhite;
     font-family: $fontMain;
 
     @include nsm {
-        font-size: 4.66vw;
         border-radius: 3.47vw;
         padding: 0 3.73vw;
         column-gap: 1.87vw;
     }
 
-    // .button__gradient
-    &__gradient{
+    // .button_gradient
+    &_gradient{
         background: $bgGradientAccent;
     }
 
-    // .button__gray
-    &__gray{
+    // .button_gray
+    &_gray{
         background: $bgGradientWhite50;
     }
 
+    // .button_transparent
+    &_transparent{
+        background: none;
+    }
+
+    // .button_fontS
+    &_fontS{
+        font-size: 16px;
+
+        @include nsm {
+            font-size: 4.66vw;
+        }
+    }
+
+    // .button_fontM
+    &_fontM{
+        font-size: 24px;
+        font-weight: 500;
+
+        @include nsm {
+            font-size: 5.87vw;
+        }
+    }
+
     
-    // .button__icon
-    &__icon{
+    // .button_icon
+    &_icon{
         padding: 14px 20px;
         @include nsm {
 
