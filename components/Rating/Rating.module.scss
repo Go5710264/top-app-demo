@@ -14,5 +14,10 @@
         &_fill{
             fill: $colorMainBlue;
         }
+        
+        // .raiting__svg_editable
+        &_editable{
+            cursor: pointer;
+        }
     }
 }
