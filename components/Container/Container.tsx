@@ -8,6 +8,7 @@ export const Container = ({children, className, typeContainer = 'none', mobileHi
             [styles.header]: typeContainer == 'header',
             [styles.buttons]: typeContainer == 'buttons',
             [styles.input]: typeContainer == 'input',
+            [styles.rating]: typeContainer == 'rating',
             [styles.mobileHide]: mobileHide == true,
 
         })}

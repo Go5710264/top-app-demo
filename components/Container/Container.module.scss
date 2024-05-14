@@ -23,6 +23,13 @@
     position: relative;
 }
 
+.rating{
+    width: 120px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .mobileHide{
     @include nsm {
       display: none;

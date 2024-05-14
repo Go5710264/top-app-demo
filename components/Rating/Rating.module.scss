@@ -1,2 +1,18 @@
 @import '../../styles/fonts.scss'; 
 @import '../../styles/mixin.scss';
+@import '../../styles/colors.scss';
+
+.rating{
+
+    // .raiting__svg
+    &__svg{
+        width: 20px;
+        height: auto;
+        fill: $colorMainGray;
+
+        // .raiting__svg_fill
+        &_fill{
+            fill: $colorMainBlue;
+        }
+    }
+}

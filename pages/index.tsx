@@ -1,5 +1,5 @@
 import Logotype from "../components/Logotype/Logotype";
-import { Htag, Button, Container, Icon, Ptag, Tag } from "../components";
+import { Htag, Button, Container, Icon, Ptag, Tag, Rating } from "../components";
 import { TextContainer } from "../components/TextContainer/TextContainer";
 import SearchString from "../components/SearchString/SearchString";
 
@@ -50,6 +50,9 @@ export default function MainPage(): JSX.Element {
         <Tag size="l" bgColor="Main/Dimming-gray" border="Main/White30" >Новый сезон</Tag>
         <Tag size="l" bgColor="Main/Dimming-gray" border="Main/White30" >Премьера</Tag>
         <Tag size="l" bgColor="Main/Dimming-gray" border="Main/White30" >43:54</Tag>
+        <Container typeContainer="rating">
+          <Rating rating={4}></Rating>
+        </Container>
       </div>
     </section>
   );
