@@ -2,8 +2,10 @@ import Logotype from "../components/Logotype/Logotype";
 import { Htag, Button, Container, Icon, Ptag, Tag, Rating } from "../components";
 import { TextContainer } from "../components/TextContainer/TextContainer";
 import SearchString from "../components/SearchString/SearchString";
+import { useState } from "react";
 
 export default function MainPage(): JSX.Element {
+  const [rating, setRating] = useState<number>(2);
   return (
     <section className="section">
       <div className="container-box">
@@ -51,7 +53,7 @@ export default function MainPage(): JSX.Element {
         <Tag size="l" bgColor="Main/Dimming-gray" border="Main/White30" >Премьера</Tag>
         <Tag size="l" bgColor="Main/Dimming-gray" border="Main/White30" >43:54</Tag>
         <Container typeContainer="rating">
-          <Rating rating={4} isEditable={true}></Rating>
+          <Rating rating={rating} isEditable setRating={setRating}></Rating>
         </Container>
       </div>
     </section>
