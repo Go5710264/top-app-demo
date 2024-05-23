@@ -8,13 +8,11 @@
     display: flex;
     align-items: center;
     border-radius: 12px;
-    padding: 16px;
     color: $colorMainWhite;
     font-family: $fontMain;
 
     @include nsm {
         border-radius: 3.47vw;
-        padding: 0 3.73vw;
         column-gap: 1.87vw;
     }
 
@@ -44,12 +42,32 @@
 
     // .button_fontM
     &_fontM{
+        font-size: 18px;
+        font-weight: 500;
+
+        @include nsm {
+
+        }
+    }
+
+    // .button_fontL
+    &_fontL{
         font-size: 24px;
         font-weight: 500;
 
         @include nsm {
             font-size: 5.87vw;
         }
+    }
+
+    // .button_paddingS
+    &_paddingS{
+        padding: 12px 16px;
+    }
+
+    // .button_paddingM
+    &_paddingM{
+        padding: 14px 82px;
     }
 
     

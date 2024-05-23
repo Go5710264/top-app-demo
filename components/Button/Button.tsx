@@ -3,7 +3,7 @@ import styles from "./Button.module.scss"
 import cn from 'classnames';
 import SouvenirIcon from './souvenir.svg'
 
-export const Button = ({appearance, children, fontSize = 's', className, icon = false}:ButtonProps) => {
+export const Button = ({appearance, children, fontSize = 's', padding, className, icon = false}:ButtonProps) => {
     return(
         <button className={cn(styles.button, className, {
             [styles.button_gradient]: appearance == 'gradient',
@@ -11,6 +11,9 @@ export const Button = ({appearance, children, fontSize = 's', className, icon = 
             [styles.button_transparent]: appearance == 'transparent',
             [styles.button_fontS]: fontSize == 's',
             [styles.button_fontM]: fontSize == 'm',
+            [styles.button_fontL]: fontSize == 'l',
+            [styles.button_paddingS]: padding == 's',
+            [styles.button_paddingM]: padding == 'm',
             [styles.button_icon]: icon == true,
         })}>
             {children}

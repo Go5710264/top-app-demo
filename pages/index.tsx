@@ -15,18 +15,18 @@ export default function MainPage(): JSX.Element {
             <SearchString bgColor="Main/Dimming-gray"/>
             <Icon svg='IconLoupe' alt='Поиск'></Icon>
           </Container>
-          <Container typeContainer='buttons'>
-            <Button appearance='gradient' className="first-button">7 дней за 0 ₽</Button>
-            <Button appearance='gray'>Промокод</Button>
-            <Button appearance='transparent' fontSize='m'>Вход</Button>
+          <Container typeContainer='buttons' columnGap="m">
+            <Button appearance='gradient' padding='s'>7 дней за 0 ₽</Button>
+            <Button appearance='gray' padding='s'>Промокод</Button>
+            <Button appearance='transparent' fontSize='l' >Войти</Button>
           </Container>
         </Container>
         <Htag tag={'h5'} children={'Новинки'}/>
         <Htag tag={'h4'} children={'Смотри зарубежное кино'}/>
         <Htag tag={'h3'} children={'Топ недели'}/>
         {/* <Button appearance='gray' icon={true}>Ввести промокод</Button> */}
-        <Container typeContainer='buttons'>
-          <Button appearance='gradient'>Подробнее</Button>
+        <Container typeContainer='buttons' columnGap="s">
+          <Button appearance='gradient' fontSize="m" padding="m">Подробнее</Button>
           <Button appearance="gray" icon={true}>
             <Icon svg="IconBookmark" alt='Добавить в избранное'/>
           </Button>

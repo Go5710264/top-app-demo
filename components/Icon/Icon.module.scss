@@ -18,9 +18,13 @@
         top: 50%;
         right: 0;
         transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
 
         @include nsm {
             position: static;
+            width: 4.8vw;
+            height: 4.8vw;
         }
     }
 }
