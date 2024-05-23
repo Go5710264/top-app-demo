@@ -2,7 +2,7 @@ import { RatingProps } from "./Rating.props"
 import styles from "./Rating.module.scss"
 import cn from 'classnames';
 import StarIcon from './star.svg';
-import { KeyboardEvent, useEffect, useState } from "react";
+import { FunctionComponent, KeyboardEvent, useEffect, useState } from "react";
 
 export const Rating = ({isEditable = false, rating, setRating, className, ...props}:RatingProps) => {
     const [ratingArray, setRatingArray] = useState<JSX.Element[]>(new Array(5).fill(<></>));
