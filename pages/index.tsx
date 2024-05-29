@@ -3,11 +3,12 @@ import { Htag, Button, Container, Icon, Ptag, Tag, Rating } from "../components"
 import { TextContainer } from "../components/TextContainer/TextContainer";
 import SearchString from "../components/SearchString/SearchString";
 import { useState } from "react";
+import { Layout, withLayout } from "../layout/Layout";
 
-export default function MainPage(): JSX.Element {
+function mainPage(): JSX.Element {
   const [rating, setRating] = useState<number>(2);
   return (
-    <section className="section">
+    <>
       <div className="container-box">
         <Container typeContainer='header'>
           <Logotype/>
@@ -56,6 +57,8 @@ export default function MainPage(): JSX.Element {
           <Rating rating={rating} isEditable setRating={setRating}></Rating>
         </Container>
       </div>
-    </section>
+    </>
   );
 }
+
+export default withLayout(mainPage);
