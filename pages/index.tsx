@@ -9,18 +9,9 @@ function mainPage(): JSX.Element {
   const [rating, setRating] = useState<number>(2);
   return (
     <>
-      <div className="container-box">
-        <Container typeContainer='header'>
-          <Logotype/>
-          <Container typeContainer='input' mobileHide = {true}>
-            <SearchString bgColor="Main/Dimming-gray"/>
-            <Icon svg='IconLoupe' alt='Поиск'></Icon>
-          </Container>
-          <Container typeContainer='buttons' columnGap="m">
-            <Button appearance='gradient' padding='s'>7 дней за 0 ₽</Button>
-            <Button appearance='gray' padding='s'>Промокод</Button>
-            <Button appearance='transparent' fontSize='l' >Войти</Button>
-          </Container>
+      <div className="containerBox">
+        <Container typeContainer="preview">
+          
         </Container>
         <Htag tag={'h5'} children={'Новинки'}/>
         <Htag tag={'h4'} children={'Смотри зарубежное кино'}/>

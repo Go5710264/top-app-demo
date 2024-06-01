@@ -6,4 +6,5 @@ export * from './Ptag/Ptag';
 export * from './Tag/Tag';
 export * from './SearchString/SearchString';
 export * from './Rating/Rating';
+export * from './Logotype/Logotype';
 

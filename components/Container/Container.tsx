@@ -9,6 +9,7 @@ export const Container = ({children, className, typeContainer = 'none', mobileHi
             [styles.container__buttons]: typeContainer == 'buttons',
             [styles.container__input]: typeContainer == 'input',
             [styles.container__rating]: typeContainer == 'rating',
+            [styles.container__preview]: typeContainer == 'preview',
             [styles.container__mobileHide]: mobileHide == true,
             [styles.container_columnGapS]: columnGap == 's',
             [styles.container_columnGapM]: columnGap == 'm',
