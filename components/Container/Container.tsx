@@ -4,13 +4,15 @@ import cn from 'classnames';
 
 export const Container = ({children, className, typeContainer = 'none', mobileHide = false, columnGap, ...props}:ContainerProps) => {
     return(
-        <div className={cn(className, {
-            [styles.container__header]: typeContainer == 'header',
-            [styles.container__buttons]: typeContainer == 'buttons',
-            [styles.container__input]: typeContainer == 'input',
-            [styles.container__rating]: typeContainer == 'rating',
-            [styles.container__preview]: typeContainer == 'preview',
-            [styles.container__mobileHide]: mobileHide == true,
+        <div className={cn(styles.container, className, {
+            [styles.container_header]: typeContainer == 'header',
+            [styles.container_buttons]: typeContainer == 'buttons',
+            [styles.container_input]: typeContainer == 'input',
+            [styles.container_rating]: typeContainer == 'rating',
+            [styles.container_subheader]: typeContainer == 'subheader',
+            [styles.container_preview]: typeContainer == 'preview',
+            [styles.container_logoNewFilm]: typeContainer == 'logoNewFilm',
+            [styles.container_mobileHide]: mobileHide == true,
             [styles.container_columnGapS]: columnGap == 's',
             [styles.container_columnGapM]: columnGap == 'm',
 

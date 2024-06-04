@@ -3,14 +3,14 @@
 
 .container{
 
-    // .container__buttons
-    &__buttons{
+    // .container_buttons
+    &_buttons{
         width: fit-content;
         display: flex;
     };
     
-    // .container__header
-    &__header{
+    // .container_header
+    &_header{
         height: 92px;
         display: flex;
         justify-content: space-between;
@@ -21,36 +21,61 @@
         }
     };
     
-    &__input {
+    // .container_input
+
+    &_input {
         position: relative;
     }
     
-    &__rating{
+    // .container_rating
+
+    &_rating{
         width: 120px;
         height: 20px;
         display: flex;
         justify-content: space-between;
     }
     
-    &__mobileHide{
+    // .container_mobileHide
+
+    &_mobileHide{
         @include nsm {
             display: none;
         };
     }
 
-    &__preview{
+    // .container_subheader
+
+    &_subheader{
         width: 100%;
         height: 595px;
         position: relative;
     }
 
+    // .container_preview
+
+    &_preview{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
     // .container_columnGapS
+
     &_columnGapS{
         column-gap: 8px;
     }
 
     // .container_columnGapM
+    
     &_columnGapM{
         column-gap: 17px;
+    }
+
+    // .container_logoNewFilm
+    
+    &_logoNewFilm{
+        width: 338px;
+        height: 101px;
     }
 }

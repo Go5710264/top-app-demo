@@ -9,9 +9,9 @@ export const Layout = ({children}:LayoutProps) => {
     return(
         <>
             <Header/>
-            <main className="section">
-                {children}
-            </main>
+                <main className="section">
+                    {children}
+                </main>
             <Footer/>
         </>
     )

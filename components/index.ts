@@ -7,4 +7,5 @@ export * from './Tag/Tag';
 export * from './SearchString/SearchString';
 export * from './Rating/Rating';
 export * from './Logotype/Logotype';
+export * from './Image/Image';
 

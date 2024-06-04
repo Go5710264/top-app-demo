@@ -1,7 +1,7 @@
-import Logotype from "../components/Logotype/Logotype";
-import { Htag, Button, Container, Icon, Ptag, Tag, Rating } from "../components";
+// import Logotype from "../components/Logotype/Logotype";
+import { Logotype, SearchString, Htag, Button, Container, Icon, Ptag, Tag, Rating, Image } from "../components";
 import { TextContainer } from "../components/TextContainer/TextContainer";
-import SearchString from "../components/SearchString/SearchString";
+// import SearchString from "../components/SearchString/SearchString";
 import { useState } from "react";
 import { Layout, withLayout } from "../layout/Layout";
 
@@ -10,25 +10,32 @@ function mainPage(): JSX.Element {
   return (
     <>
       <div className="containerBox">
-        <Container typeContainer="preview">
-          
+        <Container typeContainer="subheader">
+          <Image 
+            imgPath="./avatar-the-last-airbender.webp" 
+            alt="Аватар: Легенда об Аанге"
+            typeImage="preview"
+          ></Image>
+          <Container typeContainer="preview">
+
+            <Container typeContainer='buttons' columnGap="s">
+              <Button appearance='gradient' fontSize="m" padding="m">Подробнее</Button>
+              <Button appearance="gray" icon={true}>
+                <Icon svg="IconBookmark" alt='Добавить в избранное'/>
+              </Button>
+              <Button appearance="gray" icon={true}>
+                <Icon svg="IconHeart" alt='Добавить в понравившиеся'/>
+              </Button>
+              <Button appearance="gray" icon={true}>
+                <Icon svg="IconArrowRight" alt='Отправить ссылку'/>
+              </Button>
+            </Container>
+          </Container>
         </Container>
         <Htag tag={'h5'} children={'Новинки'}/>
         <Htag tag={'h4'} children={'Смотри зарубежное кино'}/>
         <Htag tag={'h3'} children={'Топ недели'}/>
         {/* <Button appearance='gray' icon={true}>Ввести промокод</Button> */}
-        <Container typeContainer='buttons' columnGap="s">
-          <Button appearance='gradient' fontSize="m" padding="m">Подробнее</Button>
-          <Button appearance="gray" icon={true}>
-            <Icon svg="IconBookmark" alt='Добавить в избранное'/>
-          </Button>
-          <Button appearance="gray" icon={true}>
-            <Icon svg="IconHeart" alt='Добавить в понравившиеся'/>
-          </Button>
-          <Button appearance="gray" icon={true}>
-            <Icon svg="IconArrowRight" alt='Отправить ссылку'/>
-          </Button>
-        </Container>
         <TextContainer>
           <Ptag appearance="description-main">Чтобы спасти мир от разрушительной войны, мальчик по имени Аанг должен справиться с четырьмя стихиями и вступить в схватку с безжалостным противником, который пытается его остановить.</Ptag>
         </TextContainer>
